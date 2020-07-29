@@ -1,5 +1,5 @@
 ## Project Link:
-https://tinder-clone-3fdea.web.app/
+https://tinder-93e9b.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
 import TinderCards from './TinderCards'
-import Header from './Header'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from './Header';
+import SwipeButtons from "./SwipeButtons";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Chats from "./Chats";
+import ChatScreen from "./ChatScreen";
+
 
 function App() {
   return (
@@ -10,21 +14,26 @@ function App() {
       <Router>
 
       {/* HEADER */}
-      <Header/>
+      
       <Switch>
-        <Route path="/chat">
-          <h1>I am on chat page</h1>
-
+        <Route path="/chats/:person">
+          <Header backButton="/chats"/>
+          <ChatScreen/>
+        </Route>
+        <Route path="/chats">
+          <Header backButton="/"/>
+          <Chats/>
         </Route>
         <Route path="/">
+          <Header/>
           <TinderCards />
+          <SwipeButtons />
         </Route>
       </Switch>
-      {/* Tinder cards */}
         
 
       </Router>
-
+      {/* Tinder cards */}
       {/* Buttons below cards*/}
       {/* Chats screen */}    
       {/* Individual Chats screen */}

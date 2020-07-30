@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import PersonIcon from '@material-ui/icons/Person';
-import ForumIcon from '@material-ui/icons/Forum';
+import ForumIcon from '@material-ui/icons/ForumRounded';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { Link, useHistory } from 'react-router-dom';

@@ -1,6 +1,6 @@
 .SwipeButtons{
     position: fixed;
-    bottom: 7vh;
+    bottom: 5vh;
     display: flex;
     width: 100%;
     justify-content: space-evenly;

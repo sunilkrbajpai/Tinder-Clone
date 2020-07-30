@@ -5,17 +5,20 @@ import "./ChatScreen.css";
 function ChatScreen() {
     const [input,setInput]=useState('');
     const [messages,setMessages]=useState([{
-        name:'Ellen',
+        name:'MARK',
         image:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-        message:'Whats up'
+        message:"What's up"
     },
     {
-        name:'Ellen',
+        name:'MARK',
         image:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-        message:'How is it going'
+        message:'How is it going?'
     },
     {
         message:"I am fine!"
+    },
+    {
+        message:"What about you?"
     }
 ])
 
@@ -26,7 +29,7 @@ const handleSend=e=>{
 }
     return (
         <div className="chatScreen">
-            <p className="chatScreen__timeStamp">You matched with ELLEN on 10/07/20</p>
+            <p className="chatScreen__timeStamp">You matched with MARK on 10/07/20</p>
             {messages.map((message)=>
                 message.name?(
                 <div className="chatScreen__message">
